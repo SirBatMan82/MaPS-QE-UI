@@ -8,6 +8,32 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "Deque.AxeCore.Commons/4.14.0": {
+        "type": "package",
+        "dependencies": {
+          "NewtonSoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Deque.AxeCore.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Deque.AxeCore.Commons.dll": {}
+        }
+      },
+      "Deque.AxeCore.Playwright/4.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Deque.AxeCore.Commons": "4.14.0",
+          "Microsoft.Playwright": "1.20.2",
+          "System.IO.Abstractions": "17.0.24"
+        },
+        "compile": {
+          "lib/netstandard2.1/Deque.AxeCore.Playwright.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Deque.AxeCore.Playwright.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.22.0": {
         "type": "package",
         "compile": {
@@ -694,6 +720,19 @@
             "related": ".xml"
           }
         }
+      },
+      "System.IO.Abstractions/17.0.24": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.IO.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -766,6 +805,37 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.4.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Deque.AxeCore.Commons/4.14.0": {
+      "sha512": "6UpFIkOwSfJTstNrpbN3dDKsHrVCd+v5XKJt5xeRu0JIkkGN2P42CspxiJYxdgmtW2wYnK2kpYwowJa3ML0GZg==",
+      "type": "package",
+      "path": "deque.axecore.commons/4.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "README.md",
+        "deque.axecore.commons.4.14.0.nupkg.sha512",
+        "deque.axecore.commons.nuspec",
+        "lib/net471/Deque.AxeCore.Commons.dll",
+        "lib/netstandard2.0/Deque.AxeCore.Commons.dll"
+      ]
+    },
+    "Deque.AxeCore.Playwright/4.14.0": {
+      "sha512": "3iY/i8yPmLlfAGNI3lAlxqVyEI533Tr2jNQF0IE5Iqbund06rlbF17AYrWXAxQuSHunMSX29xHV69BklKJktPQ==",
+      "type": "package",
+      "path": "deque.axecore.playwright/4.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "README.md",
+        "deque.axecore.playwright.4.14.0.nupkg.sha512",
+        "deque.axecore.playwright.nuspec",
+        "lib/netstandard2.1/Deque.AxeCore.Playwright.dll"
       ]
     },
     "Microsoft.ApplicationInsights/2.22.0": {
@@ -2086,10 +2156,34 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.IO.Abstractions/17.0.24": {
+      "sha512": "hA7bacntMiZv1Yf9xtjwl/GP3GT1mG84QxhAk7ijAUD0pJhJaVVwXScE13vMpXnNtlaRDW6SeyZdWg2j2qrh4w==",
+      "type": "package",
+      "path": "system.io.abstractions/17.0.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon_256x256.png",
+        "lib/net461/System.IO.Abstractions.dll",
+        "lib/net461/System.IO.Abstractions.xml",
+        "lib/net5.0/System.IO.Abstractions.dll",
+        "lib/net5.0/System.IO.Abstractions.xml",
+        "lib/net6.0/System.IO.Abstractions.dll",
+        "lib/net6.0/System.IO.Abstractions.xml",
+        "lib/netstandard2.0/System.IO.Abstractions.dll",
+        "lib/netstandard2.0/System.IO.Abstractions.xml",
+        "lib/netstandard2.1/System.IO.Abstractions.dll",
+        "lib/netstandard2.1/System.IO.Abstractions.xml",
+        "system.io.abstractions.17.0.24.nupkg.sha512",
+        "system.io.abstractions.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Deque.AxeCore.Playwright >= 4.14.0",
       "Microsoft.NET.Test.Sdk >= 17.14.0",
       "Microsoft.Playwright.NUnit >= 1.52.0",
       "NUnit >= 4.3.2",
@@ -2152,6 +2246,10 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
+          "Deque.AxeCore.Playwright": {
+            "target": "Package",
+            "version": "[4.14.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.14.0, )"

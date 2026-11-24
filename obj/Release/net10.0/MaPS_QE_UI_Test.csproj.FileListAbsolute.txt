@@ -503,3 +503,7 @@ C:\Users\ch4i5\source\MaPS QE UI\obj\Release\net10.0\refint\MaPS_QE_UI_Test.dll
 C:\Users\ch4i5\source\MaPS QE UI\obj\Release\net10.0\MaPS_QE_UI_Test.pdb
 C:\Users\ch4i5\source\MaPS QE UI\obj\Release\net10.0\MaPS_QE_UI_Test.genruntimeconfig.cache
 C:\Users\ch4i5\source\MaPS QE UI\obj\Release\net10.0\ref\MaPS_QE_UI_Test.dll
+C:\Users\ch4i5\source\MaPS QE UI\obj\Release\net10.0\MaPS_QE_UI_Test.sourcelink.json
+C:\Users\ch4i5\source\MaPS QE UI\bin\Release\net10.0\Deque.AxeCore.Commons.dll
+C:\Users\ch4i5\source\MaPS QE UI\bin\Release\net10.0\Deque.AxeCore.Playwright.dll
+C:\Users\ch4i5\source\MaPS QE UI\bin\Release\net10.0\System.IO.Abstractions.dll

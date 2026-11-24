@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MaPS QE UI Test Execution Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 2rem; background: #f8fafc; color: #0f172a; }
+        h1 { margin-bottom: 0.25rem; }
+        .meta { color: #475569; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .cards { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+        .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem 1.5rem; min-width: 140px; }
+        .card .num { font-size: 1.75rem; font-weight: 700; }
+        .pass { color: #15803d; } .fail { color: #b91c1c; } .skip { color: #a16207; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+        th, td { text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+        th { background: #f1f5f9; font-weight: 600; }
+        .badge { padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+        .badge-pass { background: #dcfce7; color: #166534; }
+        .badge-fail { background: #fee2e2; color: #991b1b; }
+        .badge-skip { background: #fef9c3; color: #854d0e; }
+        .muted { color: #64748b; font-size: 0.85rem; }
+        .error-box { background: #fef2f2; border: 1px solid #fecaca; padding: 0.5rem; border-radius: 4px; white-space: pre-wrap; font-size: 0.8rem; margin: 0; max-width: 460px; }
+    </style>
+</head>
+<body>
+    <h1>GOV.UK Holiday Entitlement — Automated Test Report</h1>
+    <div class="meta">Generated (UTC): 2026-11-24 16:07:10 | Total Duration: 10.45s</div>
+    <div class="cards">
+        <div class="card"><div>Total</div><div class="num">12</div></div>
+        <div class="card"><div>Passed</div><div class="num pass">12</div></div>
+        <div class="card"><div>Failed</div><div class="num fail">0</div></div>
+        <div class="card"><div>Skipped</div><div class="num skip">0</div></div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Test</th>
+                <th>Category</th>
+                <th>Duration</th>
+                <th>Diagnostics</th>
+                <th>Artifacts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_ChangeIrregularHoursLink_NavigatesBackToIrregularHoursQuestion</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>1621 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_FullLeaveYear_CalculatesStatutoryEntitlementAcrossBases(DaysWorkedPerWeek,&quot;Full leave year&quot;,&quot;5&quot;,null,&quot;28 days&quot;)</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>2174 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_FullLeaveYear_CalculatesStatutoryEntitlementAcrossBases(HoursWorkedPerWeek,&quot;Full leave year&quot;,&quot;37.5&quot;,&quot;5&quot;,&quot;210 hours&quot;)</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>2313 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_MissingBasisSelection_DisplaysAccessibleErrorSummary</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>1245 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_StartAgainLink_ResetsJourneyToStartOrFirstQuestion</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>833 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>StartPage_AccessibilityLandmarksAndMainHeading_ArePresent</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementBonusTests</span></td>
+    <td>Functional</td>
+    <td>429 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>PreFlight_AllMappedRegularPageElementsExist</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementPageRegularTests</span></td>
+    <td>PreFlight</td>
+    <td>3157 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>RegularPage_SelectsDaysWorkedPerWeekAndContinues</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.EntitlementPageRegularTests</span></td>
+    <td>Functional</td>
+    <td>1670 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>HolidayCalc_FullLeaveYear_RegularDaysWorkedPerWeek_Returns28Days</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.HolidayEntitlementTests</span></td>
+    <td>Functional</td>
+    <td>2886 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>HolidayCalc_PartLeaveYear_RegularHoursWorkedPerWeek_CalculatesEntitlement</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.HolidayEntitlementTests</span></td>
+    <td>Functional</td>
+    <td>2980 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>MissingSelection_ShowsAccessibleValidationErrorSummary</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.HolidayEntitlementTests</span></td>
+    <td>Functional</td>
+    <td>1497 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+<tr>
+    <td><span class="badge badge-pass">Passed</span></td>
+    <td><strong>StartPage_DisplaysTitleAndStartsCalculatorFlow</strong><br><span class="muted">Maps.HolidayEntitlement.Tests.Tests.HolidayEntitlementTests</span></td>
+    <td>Functional</td>
+    <td>1138 ms</td>
+    <td><span class='muted'>None</span></td>
+    <td><span class='muted'>—</span></td>
+</tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

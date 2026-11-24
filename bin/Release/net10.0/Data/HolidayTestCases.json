@@ -1,11 +1,9 @@
 [
-  {
-    "TestName": "FullLeaveYear_Standard5DaysPerWeek_Returns28Days",
+{
+    "TestName": "FullLeaveYear_RegularDaysWorkedPerWeek_Returns28Days",
+    "CalculationBasis": "DaysWorkedPerWeek",
     "RadioSelections": [
-      "No",
-      "No",
-      "Full leave year",
-      "Days worked per week"
+      "Full leave year"
     ],
     "NumericInput": "5",
     "ExpectedPhrases": [
@@ -13,15 +11,13 @@
     ]
   },
   {
-    "TestName": "PartLeaveYear_StartingMidYear_CalculatesEntitlement",
+    "TestName": "PartLeaveYear_RegularHoursWorkedPerWeek_CalculatesEntitlement",
+    "CalculationBasis": "HoursWorkedPerWeek",
     "RadioSelections": [
-      "No",
-      "No",
-      "Starting part way through a leave year",
-      "Days worked per week"
+      "Starting part way through a leave year"
     ],
     "StartDate": { "Day": "1", "Month": "7", "Year": "2026" },
-    "NumericInput": "5",
+    "NumericInput": "37.5",
     "ExpectedPhrases": [
       "holiday entitlement"
     ]
